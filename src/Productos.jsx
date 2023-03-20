@@ -11,7 +11,7 @@ export default function Productos() {
     isloading,
     getData,
     productosfiltrados,
-    setProductosfiltrados,
+   
     setProductos,
   } = useContext(DataContext);
   
@@ -51,8 +51,8 @@ export default function Productos() {
         />
         <BsSearch className="text-5xl text-gray-50 " />
       </div>
-      {productos &&
-        productos.map((item) => <CardTable item={item} key={item.id} />)}
+     {/*  {productos &&
+        productos.map((item) => <CardTable item={item} key={item.id} />)} */}
     </div>
   );
 }
